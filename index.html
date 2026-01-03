@@ -3,12 +3,23 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title> Colo Piógenes | Discografía </title>
+  <title>Colo Piógenes | Discografía</title>
 
   <!-- SEO básico -->
   <meta name="description" content="Colo Piógenes · Artista independiente de Buenos Aires. Discografía, lanzamientos y contacto." />
 
-<link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#000000">
+
+  <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('service-worker.js')
+        .then(() => console.log('Service Worker registrado'))
+        .catch(err => console.log('Error registrando Service Worker:', err));
+    }
+  </script>
+
 </head>
 <body>
 
@@ -28,14 +39,13 @@
   <div class="grid-albums">
 
     <div class="album">
-  <a href="https://open.spotify.com/intl-es/album/0elvWBVI9r0rUERaBXNvHm" target="_blank">
-    <div class="album-frame">
-      <img src="img/Portada de Producto de una espera.jpg" alt="Producto de una espera">
+      <a href="https://open.spotify.com/intl-es/album/0elvWBVI9r0rUERaBXNvHm" target="_blank">
+        <div class="album-frame">
+          <img src="img/Portada de Producto de una espera.jpg" alt="Producto de una espera">
+        </div>
+      </a>
+      <h3>Producto de una espera (Álbum)</h3>
     </div>
-  </a>
-  <h3>Producto de una espera (Álbum)</h3>
-</div>
-
 
     <div class="album">
       <a href="https://open.spotify.com/intl-es/album/4Y6L4C8FpCwrENrVNcVdU7" target="_blank">
@@ -43,7 +53,7 @@
           <img src="img/Portada de Esperando el producto.jpg" alt="Esperando el producto" />
         </div>
       </a>
-      <h3> Esperando el producto (EP)</h3>
+      <h3>Esperando el producto (EP)</h3>
     </div>
 
     <div class="album">
@@ -52,16 +62,16 @@
           <img src="img/Portada de susurros del silencio.jpg" alt="Susurros del silencio" />
         </div>
       </a>
-      <h3> Susurros del silencio (EP)</h3>
+      <h3>Susurros del silencio (EP)</h3>
     </div>
 
-     <div class="album">
+    <div class="album">
       <a href="https://open.spotify.com/intl-es/album/7bGhdCf2Gj5Z9lZHDE1rWJ" target="_blank">
         <div class="album-frame">
           <img src="img/Portada géneros .jpg" alt="Géneros" />
         </div>
       </a>
-      <h3> Géneros (Álbum)</h3>
+      <h3>Géneros (Álbum)</h3>
     </div>
 
     <div class="album">
@@ -70,25 +80,25 @@
           <img src="img/Portada de definitivamente si.png" alt="Definitivamente sí" />
         </div>
       </a>
-      <h3> Definitivamente sí (Álbum)</h3>
+      <h3>Definitivamente sí (Álbum)</h3>
     </div>
 
-      <div class="album">
+    <div class="album">
       <a href="https://open.spotify.com/intl-es/album/5nA1WoHqt5mONwn4wm9Heg" target="_blank">
         <div class="album-frame">
           <img src="img/Portada el hombre que absorbio el mar.png" alt="El hombre que absorbió el mar" />
         </div>
       </a>
-      <h3> El hombre que absorbió el mar (EP)</h3>
+      <h3>El hombre que absorbió el mar (EP)</h3>
     </div>
 
-<div class="album">
+    <div class="album">
       <a href="https://open.spotify.com/intl-es/album/1bmRWqoMo0sXMkzhmSWQwN" target="_blank">
         <div class="album-frame">
           <img src="img/Portada de Carita torcida.jpg" alt="Carita torcida" />
         </div>
       </a>
-      <h3> Carita torcida (Sencillo)</h3>
+      <h3>Carita torcida (Sencillo)</h3>
     </div>
 
     <div class="album">
@@ -97,16 +107,16 @@
           <img src="img/Lo cómodo que resiste portada  (1).png" alt="Lo cómodo que resiste" />
         </div>
       </a>
-      <h3> Lo cómodo que resiste (Sencillo)</h3>
+      <h3>Lo cómodo que resiste (Sencillo)</h3>
     </div>
 
-     <div class="album">
+    <div class="album">
       <a href="https://open.spotify.com/intl-es/album/7cWgADegALuwiTFCQIgPTp" target="_blank">
         <div class="album-frame">
           <img src="img/Leve tensión portada_page.png" alt="Leve tensión" />
         </div>
       </a>
-      <h3> Leve tensión (Sencillo)</h3>
+      <h3>Leve tensión (Sencillo)</h3>
     </div>
 
   </div>
@@ -133,7 +143,7 @@
     </div>
   </div>
 
-  <p class="copy">© 2026 Colo Piógenes</p>
+  <p class="copy">© 2025 Colo Piógenes</p>
 </footer>
 
 </body>

@@ -17,11 +17,12 @@ body {
   color: var(--text);
   line-height: 1.6;
 
-  background-image: url("../img/fondo.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
+  /* Fondo corregido */
+  background-image: url("../img/fondo.png"); /* asegúrate que el archivo esté en img/ */
+  background-size: cover;       /* cubre toda la pantalla */
+  background-position: center;  /* centrado */
+  background-repeat: no-repeat; /* sin repetición */
+  background-attachment: fixed; /* se mantiene al hacer scroll */
 }
 
 /* NAV — NEGRO */
