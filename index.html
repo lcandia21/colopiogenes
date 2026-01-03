@@ -1,54 +1,151 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <title>Colo Piogenes</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Colo Piógenes | Discografía</title>
 
-  <!-- tu CSS existente -->
-  <link rel="stylesheet" href="css/style.css">
+  <!-- SEO básico -->
+  <meta name="description" content="Colo Piógenes · Artista independiente de Buenos Aires. Discografía, lanzamientos y contacto." />
+
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#000000">
+
+  <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('service-worker.js')
+        .then(() => console.log('Service Worker registrado'))
+        .catch(err => console.log('Error registrando Service Worker:', err));
+    }
+  </script>
+
 </head>
-
 <body>
 
-  <nav>
-    <ul class="menu">
-      <li><a href="#">Inicio</a></li>
-    </ul>
-  </nav>
+<nav>
+  <ul class="menu">
+    <li><a href="#">Discografía</a></li>
+    <li><a href="#contacto">Contacto</a></li>
+  </ul>
+</nav>
 
-  <main>
-    <h1>Colo Piogenes</h1>
-    <p class="intro">Discografía</p>
+<main>
+  <h1>Colo Piógenes</h1>
 
-    <section class="grid-albums">
+  <p class="intro">
+    Artista independiente de Buenos Aires. 
+  </p>
 
-      <a href="https://open.spotify.com" class="album-link" target="_blank">
-        <div class="album">
-          <div class="album-frame">
-            <img src="img/album1.jpg" alt="Album 1">
-          </div>
-          <h3>Álbum 1</h3>
+  <div class="grid-albums">
+
+    <div class="album">
+      <a href="https://open.spotify.com/intl-es/album/0elvWBVI9r0rUERaBXNvHm" target="_blank">
+        <div class="album-frame">
+          <img src="img/Portada de Producto de una espera.jpg" alt="Producto de una espera">
         </div>
       </a>
+      <h3>Producto de una espera (Álbum)</h3>
+    </div>
 
-      <a href="https://open.spotify.com" class="album-link" target="_blank">
-        <div class="album">
-          <div class="album-frame">
-            <img src="img/album2.jpg" alt="Album 2">
-          </div>
-          <h3>Álbum 2</h3>
+    <div class="album">
+      <a href="https://open.spotify.com/intl-es/album/4Y6L4C8FpCwrENrVNcVdU7" target="_blank">
+        <div class="album-frame">
+          <img src="img/Portada de Esperando el producto.jpg" alt="Esperando el producto" />
         </div>
       </a>
+      <h3>Esperando el producto (EP)</h3>
+    </div>
 
-    </section>
-  </main>
+    <div class="album">
+      <a href="https://open.spotify.com/intl-es/album/4JCf9al2BcR1L22qmMvH5t" target="_blank">
+        <div class="album-frame">
+          <img src="img/Portada de susurros del silencio.jpg" alt="Susurros del silencio" />
+        </div>
+      </a>
+      <h3>Susurros del silencio (EP)</h3>
+    </div>
 
-  <footer>
-    <p class="copy">© Colo Piogenes</p>
-  </footer>
+    <div class="album">
+      <a href="https://open.spotify.com/intl-es/album/7bGhdCf2Gj5Z9lZHDE1rWJ" target="_blank">
+        <div class="album-frame">
+          <img src="img/Portada géneros .jpg" alt="Géneros" />
+        </div>
+      </a>
+      <h3>Géneros (Álbum)</h3>
+    </div>
 
-  <!-- JS SIEMPRE AL FINAL -->
-  <script src="app.js"></script>
+    <div class="album">
+      <a href="https://open.spotify.com/intl-es/album/5X1bwRQpsKQJsrgAL7Hlb8" target="_blank">
+        <div class="album-frame">
+          <img src="img/Portada de definitivamente si.png" alt="Definitivamente sí" />
+        </div>
+      </a>
+      <h3>Definitivamente sí (Álbum)</h3>
+    </div>
+
+    <div class="album">
+      <a href="https://open.spotify.com/intl-es/album/5nA1WoHqt5mONwn4wm9Heg" target="_blank">
+        <div class="album-frame">
+          <img src="img/Portada el hombre que absorbio el mar.png" alt="El hombre que absorbió el mar" />
+        </div>
+      </a>
+      <h3>El hombre que absorbió el mar (EP)</h3>
+    </div>
+
+    <div class="album">
+      <a href="https://open.spotify.com/intl-es/album/1bmRWqoMo0sXMkzhmSWQwN" target="_blank">
+        <div class="album-frame">
+          <img src="img/Portada de Carita torcida.jpg" alt="Carita torcida" />
+        </div>
+      </a>
+      <h3>Carita torcida (Sencillo)</h3>
+    </div>
+
+    <div class="album">
+      <a href="https://open.spotify.com/intl-es/album/7lMOrzh9HTlieOD4UfL3T2" target="_blank">
+        <div class="album-frame">
+          <img src="img/Lo cómodo que resiste portada  (1).png" alt="Lo cómodo que resiste" />
+        </div>
+      </a>
+      <h3>Lo cómodo que resiste (Sencillo)</h3>
+    </div>
+
+    <div class="album">
+      <a href="https://open.spotify.com/intl-es/album/7cWgADegALuwiTFCQIgPTp" target="_blank">
+        <div class="album-frame">
+          <img src="img/Leve tensión portada_page.png" alt="Leve tensión" />
+        </div>
+      </a>
+      <h3>Leve tensión (Sencillo)</h3>
+    </div>
+
+  </div>
+</main>
+
+<footer id="contacto">
+  <div class="footer-container">
+    <div>
+      <h3>Acerca</h3>
+      <p>Proyecto musical independiente.</p>
+    </div>
+
+    <div>
+      <h3>Redes</h3>
+      <p><a href="https://open.spotify.com/artist/408PbXgDodL84nPKtBU13S" target="_blank">Spotify</a></p>
+      <p><a href="https://music.youtube.com/channel/UCq6qXVhUNnga2032r7Ii7Yw" target="_blank">YouTube Music</a></p>
+      <p><a href="https://www.instagram.com/colopiogenes/" target="_blank">Instagram</a></p>
+    </div>
+
+    <div>
+      <h3>Contacto</h3>
+      <p><a href="mailto:colopiogenes@gmail.com">colopiogenes@gmail.com</a></p>
+      <p><a href="tel:+541144094166">+54 11 4409 4166</a></p>
+    </div>
+  </div>
+
+  <p class="copy">© 2026 Colo Piógenes</p>
+</footer>
+
 </body>
 </html>
