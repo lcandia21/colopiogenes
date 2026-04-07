@@ -6,7 +6,7 @@ self.addEventListener("install", e => {
         "/index.html",
         "/styles.css",
         "/app.js",
-        "/colopiogenes.jpg"
+        "/Colopiogenes.png"
       ]);
     })
   );
