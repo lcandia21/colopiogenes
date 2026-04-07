@@ -1,23 +1,23 @@
-/* Reset */
+/* RESET */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* Fondo con imagen */
+/* FONDO */
 body {
   font-family: Arial, Helvetica, sans-serif;
   color: #ffffff;
   text-align: center;
 
-  background-image: url("css/colopiogenes.jpg");
+  background-image: url("colopiogenes.jpg"); /* corregido */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 
-/* Capa oscura */
+/* CAPA OSCURA */
 body::before {
   content: "";
   position: fixed;
@@ -29,20 +29,20 @@ body::before {
   z-index: -1;
 }
 
-/* CONTENEDOR EN 3 COLUMNAS */
+/* CONTENEDOR */
 .container {
   max-width: 1200px;
-  margin: 100px auto;
+  margin: 40px auto;
   padding: 20px;
 
   display: grid;
-  grid-template-columns: repeat(3, 1fr); /* 3 columnas */
-  gap: 40px; /* espacio entre columnas */
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
 }
 
 /* TARJETAS */
 section {
-  padding: 40px;
+  padding: 30px;
   border-radius: 20px;
   background-color: rgba(0, 0, 0, 0.6);
   backdrop-filter: blur(5px);
@@ -53,38 +53,61 @@ section {
   justify-content: space-between;
 }
 
-/* Espaciado interno */
+/* ESPACIADO INTERNO */
 section h1,
 section p,
 section img,
 section a {
-  margin-bottom: 25px;
+  margin-bottom: 20px;
 }
 
-/* Hover */
+/* HOVER */
 section:hover {
   box-shadow: 0 0 30px rgba(0, 0, 0, 0.9);
-  transform: scale(1.03);
+  transform: scale(1.02);
 }
 
-/* Título */
+/* TITULOS */
 h1 {
-  font-size: 2rem;
+  font-size: 1.8rem;
 }
 
-/* Imagen */
+/* IMAGEN */
 img {
   width: 100%;
+  max-width: 250px;
+  margin: 0 auto 20px;
   border-radius: 15px;
 }
 
-/* Texto */
+/* TEXTO */
 p {
-  font-size: 1.1rem;
+  font-size: 1rem;
   color: #cccccc;
 }
 
-/* Botón */
+/* AUDIO */
+audio {
+  width: 100%;
+  margin-top: 10px;
+}
+
+/* BOTONES */
+button {
+  background: #333;
+  border: none;
+  color: white;
+  padding: 10px 15px;
+  margin: 10px 5px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #555;
+}
+
+/* LINK */
 a {
   display: inline-block;
   padding: 12px 20px;
@@ -101,9 +124,35 @@ a:hover {
   transform: scale(1.05);
 }
 
-/* RESPONSIVE (celular) */
+/* 📱 TABLET */
 @media (max-width: 900px) {
   .container {
-    grid-template-columns: 1fr; /* 1 columna en celular */
+    grid-template-columns: 1fr;
+    margin: 20px auto;
+    padding: 10px;
+    gap: 20px;
+  }
+
+  section {
+    padding: 20px;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+}
+
+/* 📱 CELULARES CHICOS */
+@media (max-width: 480px) {
+  h1 {
+    font-size: 1.3rem;
+  }
+
+  p {
+    font-size: 0.95rem;
+  }
+
+  button {
+    padding: 8px 12px;
   }
 }
