@@ -7,7 +7,9 @@ document.addEventListener("DOMContentLoaded", () => {
     { nombre: "Dr. Ley", archivo: "Dr. Ley.mp3" },
     { nombre: "Hippie al horno", archivo: "Hippie al horno.mp3" },
     { nombre: "Cuando no estás", archivo: "Cuando no estás.mp3" },
-    { nombre: "Inconsistencia", archivo: "Inconsistencia.mp3" }
+    { nombre: "Inconsistencia", archivo: "Inconsistencia.mp3" },
+    { nombre: "Lal luz de la vida", archivo: "La luz de la vida en G con IA.mp3" },
+    { nombre: "Desprenderse", archivo: "Desprenderse en A con IA.mp3" }
   ];
 
   const lista = document.getElementById("lista");
